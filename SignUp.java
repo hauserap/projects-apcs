@@ -3,6 +3,9 @@ import java.util.Scanner;
 public class SignUp{
 
     public static void main(String[] args){
+        boolean random = false;
+
+
         Scanner scanUsername = new Scanner (System.in);
         System.out.println("Submit a username");
 
@@ -13,10 +16,25 @@ public class SignUp{
         String takenUsername2 = "skater_gurl17";
         String takenUsername3 ="gary";
 
+
         if(inUserData.equals(takenUsername)){
             System.out.println("User name is taken");
-        }else{
-            System.out.println("Sounds good");
         }
+        if(inUserData.equals(takenUsername1)){
+            System.out.println("User name is taken");
+        }
+        if(inUserData.equals(takenUsername2)){
+            System.out.println("User name is taken");
+        }
+        if(inUserData.equals(takenUsername3)){
+            System.out.println("User name is taken");
+        }
+
+
+        if(random=false){
+            System.out.println("username is ok");
+        }
+
+         
     }
 }
